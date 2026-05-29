@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy - LyricLens</title>
+<meta name="description" content="Privacy policy for the LyricLens Chrome extension. No accounts, no tracking, no data collection." />
+<style>
+  :root{--bg:#0b0b0f;--panel:#16161d;--border:#24242e;--text:#f5f5f7;--muted:#9aa0ae;--a:#7c5cff;--b:#ff4d8d;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--text);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.65;}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 24px 80px;}
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:32px;}
+  .logo{width:34px;height:34px;border-radius:9px;}
+  .wm{font-weight:800;font-size:18px;letter-spacing:-.01em;background:linear-gradient(135deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent;}
+  h1{font-size:32px;letter-spacing:-.02em;margin-bottom:6px;}
+  .updated{color:var(--muted);font-size:14px;margin-bottom:28px;}
+  h2{font-size:18px;margin:30px 0 10px;}
+  p{color:#d9d9e0;margin:10px 0;}
+  ul{margin:10px 0 10px 22px;color:#d9d9e0;}
+  li{margin:7px 0;}
+  code{background:var(--panel);border:1px solid var(--border);border-radius:6px;padding:1px 6px;font-size:13px;}
+  strong{color:#fff;}
+  a{color:#b9a2ff;}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:18px 22px;margin-top:24px;color:var(--muted);font-size:14px;}
+  footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid var(--border);padding-top:20px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 32 32"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7C5CFF"/><stop offset="1" stop-color="#FF4D8D"/></linearGradient></defs><rect x="1" y="1" width="30" height="30" rx="8" fill="url(#g)"/><rect x="8" y="9" width="16" height="2.6" rx="1.3" fill="#fff" opacity="0.95"/><rect x="8" y="15" width="12" height="2.6" rx="1.3" fill="#fff" opacity="0.8"/><path d="M8 21.5 L8 26 L12 23.75 Z" fill="#fff" opacity="0.95"/></svg>
+    <span class="wm">LyricLens</span>
+  </div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 2026-05-28</p>
+
+  <p>LyricLens is a browser extension that shows lyrics for the YouTube video you are watching. Your privacy is simple to explain because <strong>LyricLens has no server and collects no personal data.</strong></p>
+
+  <h2>What LyricLens accesses</h2>
+  <ul>
+    <li><strong>The title and channel of the active YouTube tab</strong>, only when you click the extension icon. This is used to identify the song.</li>
+    <li><strong>The video's current playback time</strong>, only while the lyrics panel is open and synced highlighting is active, to follow along with the song.</li>
+    <li><strong>Your preferred text size</strong>, stored locally in your browser via <code>chrome.storage.local</code> so it persists between sessions.</li>
+  </ul>
+
+  <h2>What LyricLens sends, and to whom</h2>
+  <p>To find lyrics, LyricLens sends the song title or your search query to public lyrics providers:</p>
+  <ul>
+    <li>Genius (<code>genius.com</code>)</li>
+    <li>LRCLIB (<code>lrclib.net</code>)</li>
+    <li>lyrics.ovh (<code>api.lyrics.ovh</code>)</li>
+  </ul>
+  <p>These requests are made <strong>without cookies</strong> (<code>credentials: "omit"</code>) and contain only the search text needed to look up the song. Those providers' own privacy policies govern how they handle requests to their services.</p>
+
+  <h2>What LyricLens does NOT do</h2>
+  <ul>
+    <li>No user accounts or sign-in.</li>
+    <li>No analytics, telemetry, tracking pixels, or advertising.</li>
+    <li>No collection, storage, or sale of personal data.</li>
+    <li>No reading of any tab other than the active one, and only when you click the icon.</li>
+    <li>No background activity. The extension only runs when you open the popup.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>Questions? Open an issue on the <a href="https://github.com/RemielDev/lyriclens">project repository</a> or email the developer listed on the Chrome Web Store listing.</p>
+
+  <div class="card">LyricLens is not affiliated with YouTube, Google, or Genius. Lyrics belong to their respective owners and are fetched from public providers.</div>
+
+  <footer>&copy; 2026 LyricLens</footer>
+</div>
+</body>
+</html>

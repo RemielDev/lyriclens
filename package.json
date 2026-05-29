@@ -1,0 +1,13 @@
+{
+  "name": "lyriclens",
+  "version": "1.1.0",
+  "description": "Chrome extension for synced, scrollable lyrics on any YouTube song.",
+  "author": "RemielDev",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/RemielDev/lyriclens.git" },
+  "private": true,
+  "scripts": {
+    "render": "cd store && node render.js",
+    "pack": "node scripts/pack.js"
+  }
+}

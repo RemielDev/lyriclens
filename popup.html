@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>LyricLens</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <svg class="logo" width="22" height="22" viewBox="0 0 32 32" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#7C5CFF" />
+              <stop offset="1" stop-color="#FF4D8D" />
+            </linearGradient>
+          </defs>
+          <rect x="1" y="1" width="30" height="30" rx="8" fill="url(#g)" />
+          <rect x="8" y="9" width="16" height="2.6" rx="1.3" fill="#fff" opacity="0.95" />
+          <rect x="8" y="15" width="12" height="2.6" rx="1.3" fill="#fff" opacity="0.8" />
+          <path d="M8 21.5 L8 26 L12 23.75 Z" fill="#fff" opacity="0.95" />
+        </svg>
+        <span class="wordmark">LyricLens</span>
+      </div>
+      <div class="actions">
+        <button id="sync" class="iconbtn" title="Sync with video" aria-pressed="false" hidden>
+          <span class="sync-dot"></span>Sync
+        </button>
+        <button id="dec" class="iconbtn" title="Smaller text" aria-label="Decrease text size">A−</button>
+        <button id="inc" class="iconbtn" title="Larger text" aria-label="Increase text size">A+</button>
+        <button id="copy" class="iconbtn" title="Copy lyrics" aria-label="Copy lyrics">Copy</button>
+        <button id="refresh" class="iconbtn" title="Re-detect & search again" aria-label="Refresh">↻</button>
+      </div>
+    </header>
+
+    <section id="meta" class="meta hidden">
+      <div class="meta-text">
+        <div class="song" id="song"></div>
+        <div class="artist" id="artist"></div>
+      </div>
+      <a id="source" class="source-chip" href="#" target="_blank" rel="noreferrer"></a>
+    </section>
+
+    <main class="stage">
+      <div id="lyrics" class="lyrics" tabindex="0" aria-live="polite"></div>
+
+      <!-- Skeleton loading state -->
+      <div id="skeleton" class="skeleton hidden" aria-hidden="true">
+        <div class="sk-line w90"></div>
+        <div class="sk-line w70"></div>
+        <div class="sk-line w80"></div>
+        <div class="sk-line w50"></div>
+        <div class="sk-gap"></div>
+        <div class="sk-line w85"></div>
+        <div class="sk-line w60"></div>
+        <div class="sk-line w75"></div>
+        <div class="sk-line w40"></div>
+      </div>
+
+      <!-- Status / empty / error state -->
+      <div id="state" class="state hidden">
+        <div class="state-icon" id="stateIcon"></div>
+        <div class="state-title" id="stateTitle"></div>
+        <div class="state-msg" id="stateMsg"></div>
+      </div>
+    </main>
+
+    <footer class="searchbar">
+      <input id="query" type="text" placeholder="Search a song, e.g. “artist song”" autocomplete="off" />
+      <button id="search" class="searchbtn">Search</button>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
