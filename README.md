@@ -1,5 +1,10 @@
 # LyricLens - Lyrics for YouTube
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-7c5cff.svg)](LICENSE)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-ff4d8d.svg)](manifest.json)
+![No dependencies](https://img.shields.io/badge/runtime%20deps-none-2ea44f.svg)
+[![Website](https://img.shields.io/badge/site-lyriclens-1d1d25.svg)](https://remieldev.github.io/lyriclens/)
+
 A Chrome extension that shows **synced, scrollable lyrics** for the YouTube song
 you're watching, in one click. Pulls from **Genius, then LRCLIB, then lyrics.ovh**
 with smart song matching, so you get the *right* lyrics far more often than any

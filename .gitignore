@@ -1,4 +1,5 @@
 node_modules/
 store/node_modules/
 dist/
+store/out/qa-popup-real.png
 *.log
