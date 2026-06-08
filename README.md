@@ -1,14 +1,30 @@
-# LyricLens - Lyrics for YouTube
+<p align="center">
+  <img src="brand/banner.png" alt="LyricLens - synced lyrics for YouTube" width="100%" />
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-7c5cff.svg)](LICENSE)
-[![Manifest V3](https://img.shields.io/badge/Manifest-V3-ff4d8d.svg)](manifest.json)
-![No dependencies](https://img.shields.io/badge/runtime%20deps-none-2ea44f.svg)
-[![Website](https://img.shields.io/badge/site-lyriclens-1d1d25.svg)](https://remieldev.github.io/lyriclens/)
+<h3 align="center">
+  Synced, scrollable lyrics for any YouTube song.
+</h3>
 
-A Chrome extension that shows **synced, scrollable lyrics** for the YouTube song
-you're watching, in one click. Pulls from **Genius, then LRCLIB, then lyrics.ovh**
-with smart song matching, so you get the *right* lyrics far more often than any
-single-source tool.
+<p align="center">
+  One click. Three sources with smart matching. No account, no tracking.
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-0e0f14?style=for-the-badge&labelColor=0e0f14&color=c084fc" /></a>
+  <a href="manifest.json"><img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-0e0f14?style=for-the-badge&labelColor=0e0f14&color=f472b6" /></a>
+  <a href="https://remieldev.github.io/lyriclens/"><img alt="Website" src="https://img.shields.io/badge/site-lyriclens-0e0f14?style=for-the-badge&labelColor=0e0f14&color=1d1d25" /></a>
+</p>
+
+<p align="center">
+  <img alt="Chrome" src="https://img.shields.io/badge/Chrome-1c1f26?style=flat-square&logo=googlechrome&logoColor=eab308" />
+  <img alt="No deps" src="https://img.shields.io/badge/runtime%20deps-none-1c1f26?style=flat-square&color=2ea44f" />
+  <img alt="Sources" src="https://img.shields.io/badge/Genius%20·%20LRCLIB%20·%20lyrics.ovh-1c1f26?style=flat-square" />
+</p>
+
+---
+
+A Chrome extension that shows **synced, scrollable lyrics** for the YouTube song you're watching, in one click. Pulls from **Genius, then LRCLIB, then lyrics.ovh** with smart song matching, so you get the *right* lyrics far more often than any single-source tool.
 
 ![hero](store/out/screenshot-1-hero.png)
 
@@ -78,8 +94,7 @@ npm install            # installs playwright-core (uses your system Chrome)
 npm run render         # regenerates everything in store/out/ and icons/
 ```
 
-`render.js` launches your installed Chrome via `playwright-core`, with no browser
-download. Override the path with `CHROME_PATH=... node render.js` if needed.
+`render.js` launches your installed Chrome via `playwright-core`, with no browser download. Override the path with `CHROME_PATH=... node render.js` if needed.
 
 ## Packaging for the Web Store
 
@@ -87,14 +102,13 @@ download. Override the path with `CHROME_PATH=... node render.js` if needed.
 npm run pack           # from repo root, builds dist/lyriclens.zip
 ```
 
-Then upload `dist/lyriclens.zip` in the
-[Developer Dashboard](https://chrome.google.com/webstore/devconsole) and fill in
-the fields from `store/STORE_LISTING.md`.
+Then upload `dist/lyriclens.zip` in the [Developer Dashboard](https://chrome.google.com/webstore/devconsole) and fill in the fields from `store/STORE_LISTING.md`.
 
 ## Notes and disclaimers
 
-- Not affiliated with YouTube, Google, or Genius. Lyrics belong to their
-  respective owners and are fetched from public providers.
-- If a provider changes its markup or API, update the relevant `provide*` function
-  in `popup.js`.
-```
+- Not affiliated with YouTube, Google, or Genius. Lyrics belong to their respective owners and are fetched from public providers.
+- If a provider changes its markup or API, update the relevant `provide*` function in `popup.js`.
+
+## License
+
+[MIT](LICENSE).
