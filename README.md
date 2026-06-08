@@ -11,16 +11,26 @@
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-0e0f14?style=for-the-badge&labelColor=0e0f14&color=c084fc" /></a>
-  <a href="manifest.json"><img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-0e0f14?style=for-the-badge&labelColor=0e0f14&color=f472b6" /></a>
+  <a href="https://chromewebstore.google.com/detail/lyriclens-lyrics-for-yout/pbgjpolljeefnaoplmonmdbpkkmfkdol"><img alt="Add to Chrome" src="https://img.shields.io/badge/Add%20to%20Chrome-Free-0e0f14?style=for-the-badge&logo=googlechrome&logoColor=eab308&labelColor=0e0f14&color=c084fc" /></a>
+  <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-0e0f14?style=for-the-badge&labelColor=0e0f14&color=10b981" /></a>
   <a href="https://remieldev.github.io/lyriclens/"><img alt="Website" src="https://img.shields.io/badge/site-lyriclens-0e0f14?style=for-the-badge&labelColor=0e0f14&color=1d1d25" /></a>
 </p>
 
 <p align="center">
-  <img alt="Chrome" src="https://img.shields.io/badge/Chrome-1c1f26?style=flat-square&logo=googlechrome&logoColor=eab308" />
+  <a href="https://chromewebstore.google.com/detail/lyriclens-lyrics-for-yout/pbgjpolljeefnaoplmonmdbpkkmfkdol"><img alt="Chrome Web Store users" src="https://img.shields.io/chrome-web-store/users/pbgjpolljeefnaoplmonmdbpkkmfkdol?label=users&style=flat-square&color=c084fc&labelColor=1c1f26" /></a>
+  <a href="https://chromewebstore.google.com/detail/lyriclens-lyrics-for-yout/pbgjpolljeefnaoplmonmdbpkkmfkdol"><img alt="Chrome Web Store rating" src="https://img.shields.io/chrome-web-store/rating/pbgjpolljeefnaoplmonmdbpkkmfkdol?label=rating&style=flat-square&color=f472b6&labelColor=1c1f26" /></a>
+  <img alt="Manifest V3" src="https://img.shields.io/badge/Manifest-V3-1c1f26?style=flat-square&color=f472b6" />
   <img alt="No deps" src="https://img.shields.io/badge/runtime%20deps-none-1c1f26?style=flat-square&color=2ea44f" />
   <img alt="Sources" src="https://img.shields.io/badge/Genius%20·%20LRCLIB%20·%20lyrics.ovh-1c1f26?style=flat-square" />
 </p>
+
+---
+
+## Install
+
+The easiest way: grab it from the **[Chrome Web Store](https://chromewebstore.google.com/detail/lyriclens-lyrics-for-yout/pbgjpolljeefnaoplmonmdbpkkmfkdol)** in one click. Works in Chrome, Edge, Brave, Arc, and any other Chromium browser.
+
+For development or to run unmodified source, see the unpacked install below.
 
 ---
 
